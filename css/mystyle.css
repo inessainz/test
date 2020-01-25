@@ -413,6 +413,7 @@ video {
   display: flex; 
   margin-top: 20px;
 }
+	
 
 .video-image img {
  
@@ -420,7 +421,11 @@ video {
   height: auto;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
 
+}
 
 h2 {
 text-align: center;
