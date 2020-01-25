@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Romeo and Juliet festival</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/04231a92c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--top navigation-->
+<div class="topnav wrapper"> 
+	<a href="index.html"> <img class="navlogo" src="images/logo.png"> <a>
+	<div class="mylinks-desktop">
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+		<a href="merch.html">Merch</a>
+		<a href="tickets.html">Tickets</a>
+    </div>
+    <div id="mylinks-mobile">
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+		<a href="merch.html">Merch</a>
+		<a href="tickets.html">Tickets</a>
+    </div>
+<!--burger icon-->
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+   </a>
+</div>
+
+<!--banner section-->
+
+<div class="banner">
+  <img src="images/tickets.jpg" class="responsive">
+</div>
+
+
+
+<!--tickets section-->
+<main class="wrapper"> 
+
+
+<h2>Tickets</h2>
+	
+
+<div class="tickets-container"> 
+	<div class="date">
+		<p>Select Date:</p>
+		<select>
+			<option value="date">...</option>
+			<option value="saturday">Saturday 6th June</option>
+			<option value="sunday">Sunday 7th June</option>
+		</select>
+	</div>
+
+	<div class="tickettype">
+		<p>Select Ticket Type:</p>
+		<select>
+			<option value="type">...</option>
+			<option value="student">Student €20</option>
+			<option value="adult">Adult €30</option>
+		</select>
+	</div>
+
+	<div class="quantity">
+		<p>Select quantity of tickets:</p>
+		<select>
+			<option value="quantity">...</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+	</div>
+<div class="buy">
+	<button type="button"> <a href="https://www.ticketmaster.ie/">Buy Tickets</a> </button>
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+
+	
+</div>
+<footer>
+	<div class="footertop wrapper"> 
+
+    <img class="footerlogo" src="images/logo.png">
+	<p>Subscribe to our newsletter</p>
+</div>
+<div class="footermiddle wrapper">
+	
+      <form action="/action_page.php">
+  
+      <div class="signup">
+  
+            <div class="container" style="background-color:white">
+    
+           <input type="text" placeholder="Email address" name="mail" required>
+    
+           </div>
+
+           <div class="container">
+    
+           <input type="submit" value="Subscribe">
+           </div>
+      </form>
+      </div>
+
+
+<div class="socialicons">
+<a href="#"><i class="fab fa-facebook-square"></i></a>
+<a href="#"><i class="fab fa-twitter-square"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+</div>
+
+
+<div class="footerbottom"> 
+	<p> Privacy Policy&nbsp;&nbsp; |&nbsp;&nbsp; T&C&nbsp;&nbsp; | &nbsp;&nbsp;© Inés</p>
+	
+</div>
+</footer>
+
+
+</body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mylinks-mobile");
+  if (x.style.display === "block") {
+    x.style.display = " none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</html>

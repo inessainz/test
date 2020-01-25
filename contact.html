@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Romeo and Juliet festival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/04231a92c6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<!--top navigation starts-->
+<div class="topnav wrapper"> 
+  <a href="index.html"> <img class="navlogo" src="images/logo.png"> <a>
+  <div class="mylinks-desktop">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="merch.html">Merch</a>
+    <a href="tickets.html">Tickets</a>
+    </div>
+    <div id="mylinks-mobile">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="merch.html">Merch</a>
+    <a href="tickets.html">Tickets</a>
+    </div>
+<!--burger icon-->
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+   </a>
+</div>
+<!--top navigation ends-->
+
+
+
+<div class="banner">
+  <img src="images/contact.jpg" class="responsive">
+</div>
+
+
+<main class="wrapper"> 
+
+  <h2> Contact </h2>
+  
+<div class="contact">
+<div class="contact-details">
+
+ <h3> Location </h3>
+
+<p> 
+You can find us at the following address. It is easily accessible by Dublin Bus, Dublin Bike or Luas.
+</p> <br>
+<p>RJ Dance Festival <br>
+Phoenix Park.<br>
+Dublin, Ireland.<br>
+</p> <br>
+
+<h3> Enquiries </h3>
+ <p>Feel free to contact us if you have any question.<br>
+Phone n1ber +353 19876543<br>
+Email: info@rjfestival.com<br>
+</p>
+  
+</div>
+<div id="googleMap" ></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(53.3580522,-6.3416513),
+  zoom:12,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyBtV3PecIjuij4fb-76YEd9OeDwAmp5nwI
+&callback=myMap"></script>
+
+
+
+
+
+
+
+</div>
+  
+</main>
+
+
+<footer>
+	<div class="footertop wrapper"> 
+
+    <img class="footerlogo" src="images/logo.png">
+	<p>Subscribe to our newsletter</p>
+</div>
+<div class="footermiddle wrapper">
+	
+      <form action="/action_page.php">
+  
+      <div class="signup">
+  
+            <div class="container" style="background-color:white">
+    
+           <input type="text" placeholder="Email address" name="mail" required>
+    
+           </div>
+
+           <div class="container">
+    
+           <input type="submit" value="Subscribe">
+           </div>
+      </form>
+      </div>
+
+
+<div class="socialicons">
+<a href="#"><i class="fab fa-facebook-square"></i></a>
+<a href="#"><i class="fab fa-twitter-square"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+</div>
+
+
+<div class="footerbottom"> 
+	<p> Privacy Policy&nbsp;&nbsp; |&nbsp;&nbsp; T&C&nbsp;&nbsp; | &nbsp;&nbsp;© Inés</p>
+	
+</div>
+</footer>
+
+
+
+</body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mylinks-mobile");
+  if (x.style.display === "block") {
+    x.style.display = " none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</html>
