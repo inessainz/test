@@ -1,0 +1,515 @@
+
+/* reset browser styling*/
+*{ 
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+background-image: url("../images/background.jpg");
+background-repeat: no-repeat;
+
+
+}
+
+.wrapper {
+  margin: auto 40px;
+
+}
+
+
+/*top nav starts here*/
+.topnav{
+	
+  top:0;
+
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1px;
+  z-index: 10;
+  margin-bottom: 13px;
+  }
+
+
+.navlogo{ 
+width: 75px;
+display: flex;
+padding-top: 14px;
+padding-right: 60px;
+padding-left: 6px;
+
+}
+.mylinks-desktop {
+display:flex;
+padding-top: 28px;
+ }
+
+.mylinks-desktop a{
+padding: 10px;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+color: black;
+  }
+
+#mylinks-mobile {
+  display: none;
+}
+
+
+.icon {
+  display: none;
+  margin-right: 80px;
+}
+
+/* top nav ends here*/
+
+
+/* content styling starts here*/
+
+video {
+  width: 100%; 
+  height: auto;
+}
+
+.video-image {
+  display: none;
+
+}
+.video-container {
+  position: relative;
+
+}
+
+.cta { 
+position: absolute;
+bottom: 40px;
+left: 40px;
+
+
+
+}
+
+.cta button {
+background-color: transparent;
+font-weight: bold;
+color: #ffffff;
+text-decoration: none;
+}
+
+.cta button a {
+ color: #ffffff;
+text-decoration: none; 
+}
+
+.cta button:hover {
+background-color: #ffffff;
+color:#000000;
+
+}
+.cta button:hover a {
+text-decoration: none;
+color:#000000;
+}
+
+.home p {
+  padding: 30px 0px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+main {     
+display: block;
+padding: 25px 0px;
+ }
+
+h2 {
+  margin-bottom: 12px;
+}
+
+
+/*about styling starts here*/
+
+.about p {
+  padding: 30px 0px;
+}
+
+
+
+/*merch styling starts here*/
+
+.merchandise {
+
+display: flex;
+text-align: center;
+justify-content: space-around;
+
+}
+
+.merch-item {
+  
+padding-right: 80px;
+padding-bottom: 20px;
+
+}
+
+
+
+
+.merch-item img {
+  
+  height: auto;
+ }
+
+
+
+/*contact styling starts here*/
+
+.contact {
+
+clear: both; 
+}
+.contact-details {
+float: left;
+max-width: 30%;
+padding: 30px;
+  margin-bottom: 200px ;
+}
+
+#googleMap 
+{
+float: right;
+width: 400px;
+height: 400px;
+margin: 0px 40px 20px 0px;
+}
+
+
+/*tickets styling starts here*/
+
+.tickets-container{
+  width: 40%;
+  height: 300px;
+  padding: 20px 0px;
+  
+
+}
+
+.tickets-container p{
+font-weight: 500;
+}
+
+
+
+
+.date {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+
+}
+.tickettype {
+display: flex;
+justify-content: space-between;
+
+}
+.quantity {
+display: flex;
+justify-content: space-between;
+
+}
+select {
+  width: 200px;
+  margin: 10px;
+   padding-bottom: 10px;
+}
+
+.buy {
+  display: flex;
+  justify-content: flex-end;
+  
+
+}
+.buy a {
+  color: #ffffff;
+  text-decoration: none;
+
+}
+button {
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 12pt;
+}
+
+
+/* content styling ends here*/
+
+
+
+/* footer styling starts here*/
+footer {
+  position: block;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+
+
+
+.footertop { 
+	padding: 10px;
+	font-weight: bold;
+	width: 200px;
+}
+
+
+.footermiddle {
+display: flex;
+justify-content: space-between;
+}
+
+
+
+
+.signup {  
+display: flex;
+
+
+ }
+
+.footerlogo { 
+	width: 60px;
+ }
+ .footerbottom {
+ 	background-color: black;
+ 	height: 20px;
+ 	text-align: center;
+ 	padding: 10px 0px 5px 0px;
+ 	color: white;
+  font-size: 8pt;
+ }
+
+.socialicons {
+display: flex;
+}
+
+.socialicons a { 
+
+color: black;
+font-size: 24pt;
+padding: 22px 20px 0 0;
+
+
+ }
+
+
+/* styling below is for the newsletter sign up*/
+ 
+form {
+  
+  display: flex;
+}
+
+.container {
+  padding: 10px;
+  
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* everything below is for screens max width 768px.....................................................................*/
+
+@media screen and (max-width:768px){
+
+.mylinks-desktop {
+    display: none;
+   }
+
+#mylinks-mobile {
+  flex-direction: column;
+  margin-top: 75px;
+  text-align: right;
+
+}
+
+#mylinks-mobile a {
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+.topnav a {
+  color: white;
+ 
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+
+}
+
+.topnav a.icon {
+  display: block; 
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.icon {
+  margin: 10px;
+}
+
+/* top nav ends here*/
+
+
+video {
+  display: none;
+  
+}
+
+
+
+.video-image {
+  display: flex; 
+  margin-top: 20px;
+}
+
+.video-image img {
+ 
+  width: 100%;
+  height: auto;
+}
+
+
+
+h2 {
+text-align: center;
+font-size: 18px;
+}
+
+/*Merch*/
+
+.merchandise {
+
+display: flex;
+text-align: center;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+margin-left: 70px;
+}
+
+/*Contact*/
+
+.contact-details {
+float: left;
+max-width: 100%;
+
+  padding: 20px;
+  margin-bottom: 20px ;
+}
+
+#googleMap {
+  width: 100% ;
+  margin-right: 0px;
+}
+
+
+
+
+
+
+
+/*tickets*/
+
+
+.tickets-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: auto 0px;
+  width: 100%;
+}
+
+
+.tickets-container p{
+margin-top: 15px;
+font-style: bold;
+}
+
+
+/*footer*/
+
+.footertop {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100% ;
+padding: 0px;
+margin: auto 0px;
+}
+
+
+.footermiddle {
+flex-direction: column;
+align-items: center;
+}
+
+
+.signup {  
+flex-direction: column;
+margin: 10px 0px;
+ }
+
+.container {
+  padding: 0px;
+  
+}
+
+.socialicons {
+  margin-bottom: 10px;
+}
+
+
+}
+
